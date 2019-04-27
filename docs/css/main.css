@@ -2115,7 +2115,8 @@ button.swiper-pagination-bullet {
 }
 .head-address{
 		padding-left: 35px;
-		background: url('../img/ico-location.png') no-repeat left 0 center !important
+		background: url('../img/ico-location.png') no-repeat left 0 center !important;
+		margin-right: auto
 }
 .head-phone{
 		position: relative;
@@ -2328,10 +2329,11 @@ button.swiper-pagination-bullet {
 			flex: 1 1 auto
 }
 .main-slider__slide-title{
-			font-size: 2.8125rem;
-			line-height: 50px;
+			font-size: 4.5625rem;
+			line-height: 1.3;
 			font-weight: 700;
-			margin-bottom: 15px
+			margin-bottom: 15px;
+			text-transform: uppercase
 }
 .main-slider__slide-btn{
 			margin-top: 40px
@@ -13138,11 +13140,14 @@ button.swiper-pagination-bullet {
 			display: block;
 			background: url("../img/ico-arrow.png") no-repeat center
 }
-.main .btn{
-		background: #06c197;
-		background: var(--main-color);
-		color: #fff
-}
+/* .main
+ */
+/* 	.btn
+ */
+/* 		background: var(--main-color)
+ */
+/* 		color: #fff
+ */
 .selectize-control.single .selectize-input input{
 	display: none !important
 }
@@ -13321,7 +13326,8 @@ button.swiper-pagination-bullet {
 .slider .title span{
 			position: relative;
 			padding-left: 24px;
-			line-height: 1
+			line-height: 1;
+			margin-right: auto
 }
 .slider .title span:before{
 				content: '';
@@ -13336,14 +13342,14 @@ button.swiper-pagination-bullet {
 }
 .slider .title .btn{
 			font-size: 1rem;
-			margin-left: auto;
-			margin-right: 70px
+			margin-left: 20px
+}
+.slider .title .slider-arrow{
+			margin-left: 70px 
 }
 .slider .title .slick-arrow{
 				position: relative;
-
 				width: 40px;
-
 				height: 40px;
 				border-radius: 50%;
 				font-size: 0;

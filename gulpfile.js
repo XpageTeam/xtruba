@@ -37,17 +37,49 @@ const server_conn = ftp.create({
 gulp.task('browser-sync', () =>  {
 	browserSync.init({
 		server: {
-			baseDir: 'dist'
+			baseDir: 'docs'
 		},
 		notify: false
 	});
 
 	browserSync.watch([
-		"dist/css/*.css",
-		"dist/js/*.js",
-		"dist/*.html",
+		"docs/css/*.css",
+		"docs/js/*.js",
+		"docs/*.html",
 	]).on("change", browserSync.reload);
 });
+
+gulp.task("svg", e => 
+	gulp.src("./src/img/ico-*.svg")
+		.pipe($.svgmin({
+			js2svg: {
+				pretty: true
+			}
+		}))
+		.pipe($.cheerio({
+			run($){
+				//$("[fill]").removeAttr("fill")
+
+				//$("[stroke]").removeAttr("stroke")
+
+				$("[style]").removeAttr("style")
+				$("[width]").removeAttr("width")
+				$("[height]").removeAttr("height")
+			},
+			parserOptions: {
+				xmlMode: true
+			}
+		}))
+		.pipe($.replace("^gt;", ">"))
+		.pipe(require("gulp-svg-sprite")({
+			mode: {
+				symbol: {
+					sprite: "sprite.svg"
+				}
+			}
+		}))
+		.pipe(gulp.dest("src/pug/"))
+)
 
 gulp.task("postcss", _ => 
 	gulp.src([
@@ -78,7 +110,7 @@ gulp.task("postcss", _ =>
 			path.extname = path.extname == ".sss" ? ".css" : path.extname;
 		}))
 		.pipe(sourcemaps.write("."))
-		.pipe(gulp.dest("dist/css"))
+		.pipe(gulp.dest("docs/css"))
 );
 
 gulp.task("pug", _ => 
@@ -117,7 +149,7 @@ gulp.task('imagemin', () =>
 );
 
 
-gulp.task("remove:base64", callback => {del.sync("dist/css/base64.css"); callback()});
+gulp.task("remove:base64", callback => {del.sync("docs/css/base64.css"); callback()});
 
 gulp.task("deploy:css", () => 
 	gulp.src("docs/css/*.*", {since: gulp.lastRun("postcss")})
@@ -136,7 +168,7 @@ gulp.task("deploy:img", () =>
 
 gulp.task("deploy:dist", _ => 
 	gulp.src("docs/**/*.*", {buffer: false})
-		.pipe(xpager_conn.dest(xpager_path))
+		.pipe(xpager_conn.dest(connectionSettings.xpager.dirName))
 );
 
 gulp.task("deploy", gulp.series(gulp.parallel("postcss", "pug", "imagemin"), "deploy:dist"));
@@ -149,6 +181,7 @@ const local = _ => {
 	gulp.watch('src/pug/**/*', gulp.series("pug"));
 	// gulp.watch("src/js/*.js", gulp.series("babel"));
 	gulp.watch("src/img/**/*", gulp.series("imagemin"));
+	gulp.watch("src/img/**/*.svg", gulp.series("svg"))
 },
 watch = _ => {
 	gulp.watch("docs/css/**/*", gulp.series("deploy:css"));
@@ -156,17 +189,6 @@ watch = _ => {
 	gulp.watch("docs/img/**/*", gulp.series("deploy:img"));
 };
 
-gulp.task("deploy:zip", () => 
-	gulp.src([
-			"**/*.*",
-			"!node_modules/**",
-			"!bower_components/**",
-			"!dist/**",
-			"!*.zip"
-			])
-		.pipe($.zip("app.zip"))
-		.pipe(xpager_conn.dest(xpager_path))
-);
 
 gulp.task("deploy-to-server", gulp.series(gulp.parallel("postcss", "pug", "imagemin"), gulp.parallel(local, watch)));
 
