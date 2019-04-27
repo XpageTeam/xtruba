@@ -1,0 +1,75 @@
+.contacts-v1 .contacts {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+}
+
+
+		.contacts-v1 .contacts-list .btn {
+				margin-top: 45px;
+				background: var(--main-color);
+				background: var(--main-color);
+				color: #fff ;
+}
+
+
+		.contacts-v1 .contacts-list .btn:hover {
+					background: var(--specond-color);
+					background: var(--specond-color);
+					color: #000;
+}
+
+
+		.contacts-v1 .contacts-item {
+			padding-left: 25px;
+}
+
+
+		.contacts-v1 .contacts-item:not(:first-child) {
+				margin-top: 45px;
+}
+
+
+		.contacts-v1 .contacts-item__label {
+				font-size: 0.875rem;
+				color: #b8becd;
+				line-height: 1;
+				margin-bottom: 10px;
+}
+
+
+		.contacts-v1 .contacts-item a {
+				color: var(--main-color);
+				color: var(--main-color);
+}
+
+
+		.contacts-v1 .contacts-item.ico-location {
+				background: url('../img/ico-location-contact.png') no-repeat left top;
+}
+
+
+		.contacts-v1 .contacts-item.ico-phone {
+				background: url('../img/ico-phone-contact.png') no-repeat left top;
+}
+
+
+		.contacts-v1 .contacts-item.ico-email {
+				background: url('../img/ico-email.png') no-repeat left top;
+}
+
+
+		.contacts-v1 .contacts-item.ico-clock {
+				background: url('../img/ico-clock.png') no-repeat left top;
+}
+
+
+		.contacts-v1 .contacts-map {
+			position: relative;
+			
+			margin-left: 2rem;
+			margin-top: -105px;
+			border: 1px solid var(--border-color);
+			border: 1px solid var(--border-color);
+}
+/*# sourceMappingURL=contacts-v1.css.map */

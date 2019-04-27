@@ -1,0 +1,131 @@
+.testemonials-v1 .testemonials__list {
+			-webkit-column-count: 2;
+			        column-count: 2;
+			grid-column-gap: 30px;
+			-webkit-column-gap: 30px;
+			        column-gap: 30px
+}
+
+		.testemonials-v1 .testemonials__item {
+			padding: 60px ;
+			border: 1px solid #f8f9fb;
+			display: block;
+			transition: box-shadow .3s ease;
+			page-break-inside: avoid;
+			-webkit-column-break-inside: avoid;
+			        break-inside: avoid
+}
+
+		.testemonials-v1 .testemonials__item:not(:last-child) {
+				margin-bottom: 30px
+}
+
+		.testemonials-v1 .testemonials__item:hover {
+				box-shadow: 0px 0px 50px 8px rgba(37,41,77, 0.05)
+}
+
+		.testemonials-v1 .testemonials__item.js__file--open .testemonials-btn {
+						background: var(--main-color);
+						background: var(--main-color);
+						-webkit-transform: rotate(0deg);
+						        transform: rotate(0deg)
+}
+
+		.testemonials-v1 .testemonials__item.js__file--open .testemonials-btn:before {
+							-webkit-filter: invert(0);
+							        filter: invert(0)
+}
+
+		.testemonials-v1 .testemonials__item.js__file--open .testemonials-file {
+						opacity: 0;
+						pointer-events: none
+}
+
+		.testemonials-v1 .testemonials__item-top {
+				display: flex;
+				margin-bottom: 24px 
+}
+
+		.testemonials-v1 .testemonials__item-title {
+				font-size: 1.125rem;
+				font-weight: 400;
+				line-height: 26px;
+				letter-spacing: 0.18px
+}
+
+		.testemonials-v1 .testemonials__item-subtitle {
+				color: #b8becd;
+				font-size: 0.875rem;
+				font-weight: 400;
+				line-height: 22px;
+				letter-spacing: 0.14px
+}
+
+		.testemonials-v1 .testemonials__item-date {
+				color: #b8becd;
+				font-size: 0.75rem;
+				font-weight: 400;
+				line-height: 1;
+				margin-left: auto
+}
+
+		.testemonials-v1 .testemonials__item-files {
+				margin-top: 28px;
+				display: none
+}
+
+		.testemonials-v1 .testemonials__item-file {
+				padding-left: 43px;
+				transition: opacity .3s ease
+}
+
+		.testemonials-v1 .testemonials__item-file:not(:first-child) {
+					margin-top: 19px
+}
+
+		.testemonials-v1 .testemonials__item-photo {
+				margin-right: 22px
+}
+
+		.testemonials-v1 .testemonials__item-btn {
+				margin-top: 32px;
+				display: flex;
+				justify-content: space-between
+}
+
+		.testemonials-v1 .testemonials-btn {
+			position: relative;
+			width: 43px;
+			height: 43px;
+			background-color: var(--second-color);
+			background-color: var(--second-color);
+			border-radius: 50% ;
+			-webkit-transform: rotate(180deg);
+			        transform: rotate(180deg);
+			transition: background .3s ease, -webkit-transform .3s ease;
+			transition: transform .3s ease, background .3s ease;
+			transition: transform .3s ease, background .3s ease, -webkit-transform .3s ease
+}
+
+		.testemonials-v1 .testemonials-btn:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background: url('../img/ico-arrow-up.svg') no-repeat center;
+				-webkit-filter: invert(.3);
+				        filter: invert(.3)
+}
+
+		.testemonials-v1 .testemonials-file {
+			width: 36px;
+			height: 36px;
+			background: url('../img/ico-clip.png') no-repeat center;
+			background-color: var(--second-color);
+			background-color: var(--second-color);
+			border-radius: 50% ;
+			position: relative
+}
+/*# sourceMappingURL=testemonials-v1.css.map */

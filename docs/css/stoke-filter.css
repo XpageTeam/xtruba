@@ -1,0 +1,33 @@
+.stoke-filter {
+	background: var(--second-color);
+	background: var(--second-color);
+	border-radius: 20px;
+	position: absolute;
+	right: 0;
+	top: -70px;
+}
+
+	.stoke-filter__cont {
+		display: flex;
+		justify-content: flex-end;
+}
+
+	.stoke-filter__item {
+		padding: 5px 15px;
+		display: inline-block;
+		border-radius: 20px;
+}
+
+	.stoke-filter__item:hover {
+			background: var(--main-color);
+			background: var(--main-color);
+			color: #fff;
+}
+
+	.stoke-filter__item.active {
+			background: var(--main-color);
+			background: var(--main-color);
+			color: #fff;
+}
+
+/*# sourceMappingURL=stoke-filter.css.map */

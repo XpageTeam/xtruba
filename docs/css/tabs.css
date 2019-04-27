@@ -1,0 +1,27 @@
+.tabs-content {
+		display: none;
+		width: 100%
+}
+	.tabs-content.active {
+			display: block
+}
+	.tabs__top {
+		display: flex;
+		background: var(--second-color);
+		background: var(--second-color);
+		border-radius: 20px;
+		margin-bottom: 35px
+}
+	.tabs-tab {
+		padding: 13px 20px ;
+		border-radius: 20px;
+		line-height: 1;
+		cursor: pointer
+}
+	.tabs-tab.active {
+			background: var(--main-color);
+			background: var(--main-color);
+			color: #fff
+}
+
+/*# sourceMappingURL=tabs.css.map */

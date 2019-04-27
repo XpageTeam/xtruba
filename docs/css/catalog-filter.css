@@ -1,0 +1,64 @@
+.catalog-filter {
+		border: 1px solid var(--border-color);
+		border: 1px solid var(--border-color);
+		padding: 16px 35px;
+		margin-bottom: 30px;
+}
+.filter {
+	display: flex ;
+	justify-content: space-between;
+}
+.filter__item {
+		display: flex;
+		align-items: center;
+}
+.filter__item:first-child {
+			margin-right: auto;
+}
+.filter-type-grid {
+			align-self: flex-end;
+			margin-left: 40px;
+}
+.filter .selectize-control {
+		display: flex;
+}
+.type-item {
+		width: 18px;
+		height: 18px;
+		display: inline-block;
+}
+.type-item:not(:last-child) {
+		
+			margin-right: 15px ;
+}
+.type-plate {
+		background: url('../img/ico-type-plate.png') no-repeat center;
+}
+.type-plate:hover {
+			background: url('../img/ico-type-plate-active.png') no-repeat center ;
+}
+.type-plate.active {
+			background: url('../img/ico-type-plate-active.png') no-repeat center ;
+}
+.type-row {
+		background: url('../img/ico-type-row.png') no-repeat center;
+}
+.type-row:hover {
+			background: url('../img/ico-type-row-active.png') no-repeat center ;
+}
+.type-row.active {
+			background: url('../img/ico-type-row-active.png') no-repeat center ;
+}
+.type-list {
+		background: url('../img/ico-type-list.png') no-repeat center;
+}
+.type-list:hover {
+			background: url('../img/ico-type-list-active.png') no-repeat center ;
+}
+.type-list.active {
+			background: url('../img/ico-type-list-active.png') no-repeat center ;
+}
+
+
+
+/*# sourceMappingURL=catalog-filter.css.map */

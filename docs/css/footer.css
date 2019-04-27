@@ -1,0 +1,140 @@
+.footer {
+	font-size: 0.875rem;
+	padding: 72px 0;
+	background-color: #f4f6f9;
+	border-top: 1px solid var(--border-color);
+	border-top: 1px solid var(--border-color);
+}
+
+
+	.footer-cont {
+		display: flex ;
+		flex-direction: column ;
+}
+
+
+	.footer-el {
+		display: flex ;
+		justify-content: space-between;
+}
+
+
+	.footer-el:not(:first-child) {
+			margin-top: 14px;
+}
+
+
+	.footer-el--right {
+			margin-left: auto;
+}
+
+
+	.footer-el:last-child {
+			display: flex;
+			align-items: flex-end;
+}
+
+
+	.footer-menu {
+		display: flex ;
+		margin-bottom: auto;
+		font-size: 1rem;
+}
+
+
+	.footer-menu__link {
+			padding: 10px 30px;
+}
+
+
+	.footer-menu__item:last-child .footer-menu__link {
+					padding-right: 0;
+}
+
+
+	.footer-menu__item.active a {
+					color: var(--main-color);
+					color: var(--main-color);
+}
+
+
+	.footer .btn {
+		font-size: 1rem;
+}
+
+
+	.footer-phone {
+		position: relative;
+		margin-top: 15px;
+		display: flex ;
+		align-self: flex-end;
+		cursor: pointer;
+}
+
+
+	.footer-phone:hover .tel-selects-wr {
+				opacity: 1;
+				pointer-events: all;
+}
+
+
+	.footer .tel-selected {
+		font-size: 1.3125rem;
+		font-weight: 600;
+}
+
+
+	.footer .tel-selected a {
+			padding: 0;
+}
+
+
+	.footer .tel-selected a:after {
+				border-color: #000;
+}
+
+
+	.footer .tel-selects-wr {
+		left: inherit;
+		right: -23px;
+}
+
+
+	.footer .email a {
+			color: var(--main-color);
+			color: var(--main-color);
+			text-decoration: underline;
+}
+
+
+	.footer-select {
+		margin-left: -8px;
+}
+
+.politics {
+	color: var(--main-color);
+	color: var(--main-color);
+}
+
+.dev {
+	display: flex ;
+	align-items: center;
+	color: #c1c4cb;
+	font-size: 0.875rem;
+}
+
+.dev__img {
+		background: #e4e8f0;
+		padding: 5px 10px;
+		border-radius: 5px;
+		margin-left: 21px;
+}
+
+.dev__img img {
+			display: block;
+}
+
+
+
+
+/*# sourceMappingURL=footer.css.map */

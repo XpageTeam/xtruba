@@ -1,0 +1,31 @@
+.catalog-services-v-1 .catalog-list {
+			display: flex ;
+			flex-wrap: wrap;
+			margin: 0 0 -30px -30px
+}
+		.catalog-services-v-1 .catalog-item {
+			width: calc((100% - 30px * 4) / 4);
+			margin: 0 0 30px 30px;
+			transition: box-shadow .4s ease
+}
+		.catalog-services-v-1 .catalog-item:hover {
+				box-shadow: 0 0 50px 8px rgba(37,41,77, 0.05)
+}
+		.catalog-services-v-1 .catalog-item img {
+				display: block
+}
+		.catalog-services-v-1 .catalog-item__info {
+				border: 1px solid var(--border-color);
+				border: 1px solid var(--border-color);
+				border-top: 0;
+				padding: 29px 1.4rem 37px;
+				text-align: center
+}
+		.catalog-services-v-1 .catalog-item__title {
+				font-size: 1.125rem;
+				line-height: 26px
+}
+
+
+
+/*# sourceMappingURL=catalog-services-v-1.css.map */

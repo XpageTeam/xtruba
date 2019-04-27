@@ -1,0 +1,125 @@
+.stoke-v1 .stoke__list {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 0 -30px -30px;
+}
+
+		.stoke-v1 .stoke__btn {
+			display: flex;
+			justify-content: center;
+			margin-top: 53px;
+}
+
+		.stoke-v1 .stoke .slick-list {
+				margin: 0 -15px;
+}
+
+		.stoke-v1 .stoke .slick-track {
+				display: flex;
+}
+
+		.stoke-v1 .stoke__item {
+			display: flex !important;
+			text-decoration: none;
+			color: #000;
+			transition: box-shadow .5s ease;
+			border: 1px solid #f6f7fa;
+			width: calc((100% - 30px * 2) / 2);
+			margin: 0 0 30px 30px;
+}
+
+		.stoke-v1 .stoke__item:hover {
+				box-shadow: 0px 0px 51.33px 7.67px rgba(37,41,77, 0.05);
+
+				/* .stoke__item-info-btn */
+				/* 	background: var(--main-color) */
+}
+
+		.stoke-v1 .stoke__item .date {
+				margin-top: 25px;
+}
+
+		.stoke-v1 .stoke__item-img {
+				position: relative;
+				margin: 0 !important;
+				flex: none;
+}
+
+		.stoke-v1 .stoke__item-img img {
+					display: block;
+}
+
+		.stoke-v1 .stoke__item-info {
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				flex: 1 1 auto;
+				padding: 27px 33px;
+				align-items: flex-start;
+}
+
+		.stoke-v1 .stoke__item-info-date {
+					font-size: 12px;
+					border-radius: 13px;
+					background-color: var(--second-color);
+					background-color: var(--second-color);
+					padding: 4px 13px;
+					color: #000;
+					margin-top: 25px;
+}
+
+		.stoke-v1 .stoke__item-info-date.date--orange {
+						background-color: #ee9859;
+						color: #fff;
+}
+
+		.stoke-v1 .stoke__item-info-title {
+					font-size: 1.125rem;
+					margin-bottom: 13px;
+}
+
+		.stoke-v1 .stoke__item-info-dop {
+					color: #bdc2cf;
+					font-size: 0.875rem;
+}
+
+		.stoke-v1 .stoke__item-info-price {
+					font-size: 1.5rem;
+					margin-top: 21px;
+}
+
+		.stoke-v1 .stoke__item-info-price--sale {
+						position: relative;
+						font-size: 0.875rem;
+						color: #b7b7b7;
+						margin-top: 5px;
+						padding-left: 5px;
+						display: flex;
+						justify-content: flex-start;
+}
+
+		.stoke-v1 .stoke__item-info-price--sale:before {
+							content: '';
+							position: absolute;
+							display: block;
+							top: 50%;
+							left: 0;
+							width: 100%;
+							height: 1px;
+							background: #b7b7b7;
+}
+
+		.stoke-v1 .stoke__item-info-btn {
+					display: block;
+					right: 30px;
+					bottom: 30px;
+					width: 43px;
+					height: 43px;
+					border-radius: 50%;
+					background: url('../img/ico-arrow.png') no-repeat center, #f8f9fb;
+					position: absolute;
+					right: 1.4rem;
+					bottom: 1.4rem;
+}
+
+/*# sourceMappingURL=stoke-v1.css.map */

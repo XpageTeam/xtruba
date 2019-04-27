@@ -1,0 +1,143 @@
+.head-address {
+		padding-left: 35px;
+		background: url('../img/ico-location.png') no-repeat left 0 center !important;
+}
+	
+
+	.head-phone {
+		position: relative;
+		background: none !important;
+		margin-left: 2.8125rem;
+		padding: 0;
+		display: flex ;
+		align-items: center;
+}
+	
+
+	.head-phone:hover .tel-selects-wr {
+					opacity: 1;
+					pointer-events: all;
+					z-index: 100;
+}
+	
+
+	.head-phone a {
+			background: url('../img/ico-tel.png') no-repeat left 0 center !important;
+			text-decoration: none;
+			color: currentColor;
+			padding-left: 30px;
+}
+	
+
+	.head-select__select {
+		opacity: 0;
+}
+	
+
+	.head-select__select.selectize-control {
+			opacity: 1;
+}
+	
+
+	.head-select__select .head-select__select {
+			opacity: 1;
+}
+	
+
+	.head .selectize-control .selectize-input.input-active, .head .selectize-control .selectize-input {
+			background: transparent;
+}
+	
+
+	.head .selectize-input {
+		color: currentColor;
+}
+	
+
+	.head .selectize-input input {
+		color: #fff;
+}
+	
+
+	.head-city {
+		margin-left: auto;
+}
+	
+
+	.head-link {
+		margin-left: 3.75rem;
+}
+		
+
+.tel-selects {
+		position: relative;
+		
+		display: flex ;
+		flex-direction: column;
+		transition: opacity .3s ease;
+		padding: 20px 0;
+		border: 1px solid var(--border-color);
+		border: 1px solid var(--border-color);
+		background: #fff;
+}
+		
+
+.tel-selects a {
+			padding: 10px 50px 5px 70px;
+			cursor: pointer;
+			position: relative;
+			color: #000;
+			font-size: 13px;
+			background: url('../img/ico-tel-color.png') no-repeat left 30px center !important;
+}
+		
+
+.tel-selects:before {
+			content: '';
+			position: absolute;
+			top: -8px;
+			right: 20px;
+			width: 15px;
+			height: 15px;
+			border-left: 1px solid var(--border-color);
+			border-left: 1px solid var(--border-color);
+			border-top: 1px solid var(--border-color);
+			border-top: 1px solid var(--border-color);
+			-webkit-transform: rotate(45deg);
+			        transform: rotate(45deg);
+			background: #fff;
+			z-index: 10;
+}
+		
+
+.tel-selects-wr {
+			position: absolute;
+			left: -40px;
+			top: calc(100% - 12px);
+			opacity: 0;
+			padding-top: 33px;
+			pointer-events: none;
+}
+		
+
+.tel-selected a {
+			display: flex ;
+			align-items: center ;
+			line-height: 1;
+			padding: 5px 0 5px 30px;
+}
+		
+
+.tel-selected a:after {
+				content: '';
+				display: inline-block;
+				margin-left: 20px;
+				width: 6px;
+				height: 6px;
+				border-right: 1px solid #fff;
+				border-bottom: 1px solid #fff;
+				-webkit-transform: rotate(45deg);
+				        transform: rotate(45deg);
+}
+			
+/*# sourceMappingURL=head-top.css.map */

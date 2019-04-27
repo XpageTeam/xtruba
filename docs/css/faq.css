@@ -1,0 +1,77 @@
+.faq .text-page {
+		max-width: 750px;
+}
+
+	.faq__links {
+		display: inline-block;
+		background: var(--second-color);
+		background: var(--second-color);
+		border-radius: 20px;
+		margin: 45px 0 40px;
+}
+
+	.faq__links a {
+			display: inline-block;
+			padding: 10px 20px;
+			border-radius: 20px;
+			transition: background .3s ease, color .3s ease;
+			line-height: 1;
+}
+
+	.faq__links a.active, .faq__links a:hover {
+				background: var(--main-color);
+				background: var(--main-color);
+				color: #fff;
+}
+
+	.faq__item {
+		margin-bottom: 7px;
+}
+
+	.faq__item.js__open .faq__item-top:after {
+					background-color: var(--main-color);
+					background-color: var(--main-color);
+					background-image: url('../img/ico-arrow-down-w.svg');
+					-webkit-transform: rotate(180deg);
+					        transform: rotate(180deg);
+					background-repeat: no-repeat;
+					background-position: center;
+}
+
+	.faq__item-top {
+			display: flex;
+			align-items: center;
+			position: relative;
+			background: var(--second-color);
+			background: var(--second-color);
+			padding: 17px 30px;
+			cursor: pointer;
+}
+
+	.faq__item-top:after {
+				content: '';
+				display: inline-block;
+				margin-left: auto;
+				width: 42px;
+				height: 42px;
+				border-right: 50%;
+				background-image: url('../img/ico-arrow-down.svg');
+				background-repeat: no-repeat;
+				background-position: center;
+				background-color: #fff;
+				border-radius: 50%;
+				transition: background .3s ease, -webkit-transform .3s ease;
+				transition: transform .3s ease, background .3s ease;
+				transition: transform .3s ease, background .3s ease, -webkit-transform .3s ease;
+}
+
+	.faq__item-top span {
+				margin-right: 1.4rem;
+}
+
+	.faq__item-bot {
+			display: none;
+			margin: 35px 0 50px;
+}
+
+/*# sourceMappingURL=faq.css.map */

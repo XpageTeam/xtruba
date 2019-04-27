@@ -1,0 +1,37 @@
+.soc {
+	display: flex;
+	flex-wrap: wrap;
+}
+	
+	.soc__link {
+		display: flex ;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		width: 42px;
+		height: 42px;
+		background-color: #e4e8f0;
+		transition: background .3s ease, -webkit-filter .3s ease;
+		transition: background .3s ease, filter .3s ease;
+		transition: background .3s ease, filter .3s ease, -webkit-filter .3s ease;
+}
+	
+	.soc__link img {
+			-webkit-filter: invert(.5);
+			        filter: invert(.5);
+}
+	
+	.soc__link:not(:last-child) {
+			margin-right: 11px;
+}
+	
+	.soc__link:hover, .soc__link:focus {
+			background-color: var(--main-color);
+			background-color: var(--main-color);
+}
+	
+	.soc__link:hover img, .soc__link:focus img {
+				-webkit-filter: invert(0);
+				        filter: invert(0);
+}
+/*# sourceMappingURL=soc.css.map */

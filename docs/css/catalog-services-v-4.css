@@ -1,0 +1,56 @@
+.catalog-services-v-4 .catalog-list {
+			display: flex ;
+			flex-wrap: wrap;
+			margin: 0 0 -15px 0;
+}
+		.catalog-services-v-4 .catalog-item {
+			width: 100%;
+			margin: 0 0 15px 0;
+			transition: box-shadow .4s ease;
+			border: 1px solid var(--border-color);
+			border: 1px solid var(--border-color);
+			display: flex;
+			align-items: center;
+			padding: 24px 60px 24px 40px;
+}
+		.catalog-services-v-4 .catalog-item:hover {
+				box-shadow: 0 0 50px 8px rgba(37,41,77, 0.05);
+}
+		.catalog-services-v-4 .catalog-item:hover .btn-circle {
+					background: var(--main-color);
+					background: var(--main-color);
+}
+		.catalog-services-v-4 .catalog-item:hover .btn-circle:before {
+						-webkit-filter: invert(1) ;
+						        filter: invert(1) ;
+}
+		.catalog-services-v-4 .catalog-item img {
+				display: block;
+}
+		.catalog-services-v-4 .catalog-item__img {
+				flex: none;
+}
+		.catalog-services-v-4 .catalog-item__info {
+				border-top: 0;
+				margin-left: 45px;
+				margin-right: 40px;
+}
+		.catalog-services-v-4 .catalog-item__title {
+				font-size: 1.125rem;
+				line-height: 26px;
+}
+		.catalog-services-v-4 .catalog-item__text {
+				font-size: 0.875rem;
+				color: #b8becd;
+				margin-top: 12px;
+}
+		.catalog-services-v-4 .catalog-item__btn {
+				flex: none;
+				margin-left: auto;
+				align-self: center;
+}
+
+			
+
+
+/*# sourceMappingURL=catalog-services-v-4.css.map */

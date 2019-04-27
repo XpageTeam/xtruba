@@ -1,0 +1,25 @@
+.question-ask {
+	display: flex;
+	justify-content: space-between;
+}
+
+	.question-ask__cont {
+		background: var(--second-color);
+		background: var(--second-color);
+		padding: 80px 0;
+		margin-bottom: -72px;
+		margin-top: 75px;
+}
+
+	.question-ask .forms {
+		max-width: 720px;
+		background: #fff;
+}
+
+	.question-ask .question {
+		max-width: 400px;
+		background: #fff;
+		border: 0;
+}
+
+/*# sourceMappingURL=question-ask.css.map */
