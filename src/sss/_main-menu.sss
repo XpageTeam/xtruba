@@ -18,9 +18,10 @@
 	&__link
 		text-decoration: none
 		color: currentColor
-		padding: 35px 25px
+		padding: 10px 25px
 		transition: color .3s ease
 		font-size: rem(16)
+		display: inline-block
 
 		&:hover
 			color: var(--main-color)
@@ -59,7 +60,7 @@
 
 		ul
 			position: absolute
-			top: calc(100% + 30px)
+			top: 100%
 			left: 0
 			background: #fff
 			opacity: 0
@@ -284,6 +285,7 @@
 		ul
 			max-height: 170px
 			overflow: auto
+			min-width: 155px
 
 			&::-webkit-scrollbar 
 				width: 8px

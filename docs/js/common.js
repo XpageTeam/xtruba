@@ -20984,7 +20984,8 @@ document.addEventListener("DOMContentLoaded", function (e) {
 	var $sliderOne = (0, _jquery2.default)('.slider-one .slider-block').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		fade: false,
+		fade: true,
+		adaptiveHeight: true,
 		appendArrows: (0, _jquery2.default)('.slider-one').find('.slider-arrow')
 
 	});
@@ -21157,7 +21158,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
 	});
 
 	var $sliderPartners = (0, _jquery2.default)('.slider-partners .slider__block-list').slick({
-		slidesToShow: 6,
+		slidesToShow: 4,
 		slidesToScroll: 1,
 		fade: false,
 		infinite: false,
@@ -21397,8 +21398,8 @@ document.addEventListener("DOMContentLoaded", function (e) {
 		infinite: true,
 		dots: true,
 		fade: true,
-		// autoplay: true,
-		autoplaySpeed: 1000,
+		autoplay: true,
+		autoplaySpeed: 3000,
 		appendArrows: (0, _jquery2.default)(".main-slider-arrow .wrapper"),
 		responsive: [{
 			breakpoint: 660,

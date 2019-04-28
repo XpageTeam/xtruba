@@ -83,6 +83,31 @@
 @import "_cart.sss"
 @import "_ordering.sss"
 
+
+.slider-block__item
+	&:hover 
+		.ico-cart
+			background: var(--main-color) !important
+
+			&:after
+				opacity: 1
+
+			&:before 
+				opacity: 0
+
+.main
+	#content
+		> *
+			&:nth-child(even)
+				background: var(--second-color)
+
+				
+				.slick-arrow
+					background: #fff
+
+					&:hover 
+						background: var(--main-color)
+
 .contacts
 	&-map--full
 		position: relative
@@ -261,8 +286,8 @@
 
 
 .btn
-	background: var(--second-color)
-	color: #000
+	background: var(--main-color)
+	color: #fff
 	text-decoration: none
 	border-radius: 30px
 	padding: 10px 23px
@@ -280,6 +305,7 @@
 
 	&--border
 		background: #fff
+		color: #000
 		border: 1px solid var(--main-color)
 
 	&:hover
@@ -443,6 +469,7 @@
 			right: 0
 			bottom: 0
 			background: url('../img/ico-cart.svg') no-repeat center !important
+
 		&:after
 			content: ''
 			position: absolute
@@ -454,13 +481,7 @@
 			opacity: 0
 			transition: opacity .3s ease
 
-		&:hover
 
-			&:after
-				opacity: 1
-
-			&:before
-				opacity: 0
 	&-zoom, &-download
 		size: 42px
 		background-color: var(--second-color)
@@ -500,6 +521,18 @@
 .slider
 	padding: 70px 0
 
+	.slick
+		&-track, &-slide
+			display: flex !important
+
+		&-slide 
+			height: auto !important
+
+			> div
+				display: flex
+				flex-direction: column
+				flex: 1 1 auto
+
 	&-arrow
 		display: flex
 		height: 40px
@@ -523,7 +556,8 @@
 				content: ''
 				position: absolute
 				left: 0
-				top: calc(50% - 9px)
+				top: 50%
+				transform: translateY(-50%)
 				height: 18px
 				width: 3px
 				background: var(--main-color)

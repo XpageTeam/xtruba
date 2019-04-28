@@ -81,8 +81,10 @@ document.addEventListener("DOMContentLoaded", e => {
 	let $sliderOne = $('.slider-one .slider-block').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		fade: false,
+		fade: true,
+		adaptiveHeight: true,
 		appendArrows: $('.slider-one').find('.slider-arrow'),
+
 
 	})
 
@@ -278,7 +280,7 @@ document.addEventListener("DOMContentLoaded", e => {
 	})
 
 	let $sliderPartners = $('.slider-partners .slider__block-list').slick({
-		slidesToShow: 6,
+		slidesToShow: 4,
 		slidesToScroll: 1,
 		fade: false,
 		infinite: false,
@@ -569,8 +571,8 @@ document.addEventListener("DOMContentLoaded", e => {
 			infinite: true,
 			dots: true,
 			fade: true,
-			// autoplay: true,
-			autoplaySpeed: 1000,
+			autoplay: true,
+			autoplaySpeed: 3000,
 			appendArrows: $(".main-slider-arrow .wrapper"),
 			responsive: [
 				{
