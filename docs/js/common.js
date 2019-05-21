@@ -21261,7 +21261,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
 		$this.closest('.forms__input-cont--file').after(inputFileclone);
 	});
 
-	(0, _jquery2.default)('.testemonials-btn, .btn, .catalog__info-link-more').click(function (e) {
+	(0, _jquery2.default)('.testemonials-btn, .catalog__info-link-more').click(function (e) {
 		e.preventDefault();
 
 		var $this = (0, _jquery2.default)(this);

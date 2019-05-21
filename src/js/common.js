@@ -408,7 +408,7 @@ document.addEventListener("DOMContentLoaded", e => {
 	})
 
 
-	$('.testemonials-btn, .btn, .catalog__info-link-more').click(function(e){
+	$('.testemonials-btn, .catalog__info-link-more').click(function(e){
 		e.preventDefault();
 
 		let $this = $(this);
