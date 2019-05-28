@@ -2986,6 +2986,8 @@ button.swiper-pagination-bullet {
 }
 .slider-one .slider-block .slick-list{
 				margin: 0 -15px
+				/* height: auto !important
+ */
 }
 .slider-one .slider-block .slick-track{
 				display: flex
@@ -3069,6 +3071,67 @@ button.swiper-pagination-bullet {
 .slider-one .slider-cont > .btn{
 				margin: 0 auto
 }
+.slider-nav{
+		position: relative;
+		width: 300px;
+		margin-right: 90px;
+		flex: none
+}
+.slider-nav:after{
+			content: '';
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 1px;
+			height: 100%;
+			max-height: 390px;
+			background: #f6f7fa;
+			background: var(--border-color)
+}
+.slider-nav__item:not(:first-child){
+				margin-top: 28px
+}
+.slider-nav__link{
+			position: relative;
+			cursor: pointer;
+}
+.slider-nav__link input{
+				opacity: 0;
+				position: absolute
+}
+.slider-nav__link input:checked ~ label{
+					padding-left: 50px;
+					color: #5f879f;
+					color: var(--main-color)
+}
+.slider-nav__link input:checked ~ label:before{
+						-webkit-transform: scaleX(1);
+						        transform: scaleX(1)
+}
+.slider-nav__link label{
+				cursor: pointer;
+				transition: padding .3s ease
+}
+.slider-nav__link label:before{
+					content: '';
+					position: absolute;
+					top: 10px;
+					left: 0;
+					width: 35px;
+					height: 1px;
+					background: #5f879f;
+					background: var(--main-color);
+					-webkit-transform-origin: left;
+					        transform-origin: left;
+					-webkit-transform: scaleX(0);
+					        transform: scaleX(0);
+					transition: -webkit-transform .3s ease;
+					transition: transform .3s ease;
+					transition: transform .3s ease, -webkit-transform .3s ease
+}
+.slider-nav .btn{
+			margin-top: 45px
+}
 @media screen and (max-width: 1200px){
 			.slider-one .slider-nav{
 				width: 240px;
@@ -3116,32 +3179,15 @@ button.swiper-pagination-bullet {
 	}
 
 			.slider-one .slider-nav__list{
-				display: flex;
-				flex-wrap: wrap
+				display: flex
+	}
+					.slider-one .slider-nav__link label:before{
+						display: none
 	}
 
-			.slider-one .slider-nav__item{
-				margin-top: 0 !important;
-				margin-right: 20px;
-				margin-bottom: 20px;
-				display: flex;
-				align-items: center;
-				border: 1px solid #f8f9fb;
-				border: 1px solid var(--second-color);
-	}
-
-				.slider-one .slider-nav__item input:checked ~ label{
-					border: 1px solid #5f879f;
-					border: 1px solid var(--main-color)
-	}
-
-				.slider-one .slider-nav__item label, .slider-one .slider-nav__item .reset-filter{
-					padding: 10px 15px !important;
-					display: block
-	}
-
-					.slider-one .slider-nav__item label:before,.slider-one .slider-nav__item .reset-filter:before{
-						display: none !important
+				.slider-one .slider-nav__link input:checked ~ label{
+					padding-left: 23px !important;
+					color: #fff !important
 	}
 			.slider-one .slider-block__cont{
 				width: 100%;
@@ -3152,64 +3198,7 @@ button.swiper-pagination-bullet {
 	}
 		.slider-nav__item{
 			flex: none;
-			background: #fff;
-			margin: 0 !important
-
-			/* &:focus-within
- */
-
-			/* 	background: #000
- */
-	}
-
-
-			.slider-nav__item.js__active{
-				order: -1
-	}
-
-		.slider-nav__link{
-			width: 100%
-	}
-
-		.slider-nav__list{
-			position: relative;
-			border: 1px solid #f6f7fa;
-			border: 1px solid var(--border-color);
-			height: 47px;
-			flex-direction: column;
-			flex-wrap: nowrap !important;
-			overflow: hidden;
-			background: #fff;
-			z-index: 10;
-	}
-
-
-
-			.slider-nav__list .btn{
-				border-radius: 0;
-				padding: 15px 23px
-	}
-
-				.slider-nav__list .btn.js__active{
-					order: -1
-	}
-
-
-
-			.slider-nav__list.js__open{
-				overflow: visible;
-	}
-
-				.slider-nav__list.js__open .slider-nav__item{
-					opacity: 1;
-					background: #fff;
-					z-index: 10
-	}
-
-
-				.slider-nav__list.js__open.js__active{
-					order: -1;
-					opacity: 1
+			background: #fff
 	}
 }
 @media screen and (max-width: 667px){
@@ -6448,18 +6437,28 @@ button.swiper-pagination-bullet {
 
 	.filter{
 		flex-wrap: wrap;
+		margin-left: -10px;
 	}
 
 		.filter__item{
 			flex-direction: column;
-			align-items: flex-start
+			align-items: flex-start;
+			width: 100%;
+	}
+
+			.filter__item select{
+				width: 100%;
+				border: 1px solid #eee;
+				height: 40px;
+				padding: 0 10px
 	}
 
 
 		.filter-type-grid{
 			margin-left: 0;
 			margin-top: 20px;
-			width: 100%
+			width: 100%;
+			display: none
 	}
 }
 .catalog-filter--left{
@@ -13320,9 +13319,8 @@ button.swiper-pagination-bullet {
 .slider .slick-track, .slider .slick-slide{
 			display: flex !important
 }
-.slider .slick-slide{
-			height: auto !important;
-}
+/* height: auto !important
+ */
 .slider .slick-slide > div{
 				display: flex;
 				flex-direction: column;
@@ -13546,10 +13544,22 @@ button.swiper-pagination-bullet {
 	.slider{
 		padding: 2rem 0;
 	}
-
-		.slider .title .btn{
-			margin-right: 30px
+			.slider .title a + a{
+				margin-left: 15px
 	}
+
+			.slider .title .slider-arrow{
+				margin-left: 15px
+	}
+
+			.slider .title span{
+				padding-left: 20px
+	}
+
+		.slider-nav{
+			display: none
+	}
+
 
 	.paginator{
 		margin-top: 30px
@@ -13574,6 +13584,31 @@ button.swiper-pagination-bullet {
 
 	.contacts-map--full{
 		margin-bottom: -37px
+	}
+		.slider-nav__list{
+			overflow-x: auto;
+			-webkit-overflow-scrolling: touch
+	}
+
+		.slider-nav__item{
+			background: transparent;
+			margin: 0 20px 0 0 !important;
+	}
+
+			.slider-nav__item label{
+				background: #5f879f;
+				background: var(--main-color);
+				color: #fff;
+				text-decoration: none;
+				border-radius: 30px;
+				padding: 10px 23px;
+				line-height: 1;
+				display: inline-block;
+				font-weight: 400;
+				transition: background .4s ease, color .4s ease;
+				white-space: nowrap;
+				cursor: pointer;
+				border: 1px solid transparent
 	}
 }
 @media screen and (max-width: 667px){
@@ -13609,7 +13644,8 @@ button.swiper-pagination-bullet {
 	}
 
 				.slider:not(.slider-partners):not(.slider-one):not(.slider-row-two) .title .slider-arrow{
-					margin-left: auto
+					margin-left: auto;
+					margin-top: auto
 	}
 
 	.contacts-map--full{
@@ -13628,6 +13664,10 @@ button.swiper-pagination-bullet {
 
 			.contacts__cities .city__links .active{
 				order: 1
+	}
+			.slider .title a + a{
+				margin-top: 15px;
+				margin-right: 10px
 	}
 }
 @media screen and (max-width: 370px){

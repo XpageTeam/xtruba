@@ -84,8 +84,7 @@ document.addEventListener("DOMContentLoaded", e => {
 		fade: true,
 		adaptiveHeight: true,
 		appendArrows: $('.slider-one').find('.slider-arrow'),
-
-
+		
 	})
 
 	let $sliderRowTwo = $('.slider-row-two .slider-block').slick({
@@ -194,6 +193,7 @@ document.addEventListener("DOMContentLoaded", e => {
 		slidesToScroll: 1,
 		fade: false,
 		infinite: false,
+		adaptiveHeight: true,
 		appendArrows: $(".slider-tovar .slider-arrow"),
 		responsive: [
 			{

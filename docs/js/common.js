@@ -21085,6 +21085,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
 		slidesToScroll: 1,
 		fade: false,
 		infinite: false,
+		adaptiveHeight: true,
 		appendArrows: (0, _jquery2.default)(".slider-tovar .slider-arrow"),
 		responsive: [{
 			breakpoint: 1200,

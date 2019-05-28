@@ -526,7 +526,7 @@
 			display: flex !important
 
 		&-slide 
-			height: auto !important
+			// height: auto !important
 
 			> div
 				display: flex
@@ -730,8 +730,19 @@
 	.slider
 		padding: 2rem 0
 
-		.title .btn
-			margin-right: 30px
+		.title 
+			a + a
+				margin-left: 15px
+
+			.slider-arrow
+				margin-left: 15px
+
+			span
+				padding-left: 20px
+
+		&-nav
+			display: none
+
 
 	.paginator
 		margin-top: 30px
@@ -752,6 +763,28 @@
 	.contacts-map--full
 		margin-bottom: -37px
 
+	.slider-nav
+		&__list
+			overflow-x: auto
+			-webkit-overflow-scrolling: touch
+
+		&__item
+			background: transparent
+			margin: 0 20px 0 0 !important
+
+			label
+				background: var(--main-color)
+				color: #fff
+				text-decoration: none
+				border-radius: 30px
+				padding: 10px 23px
+				line-height: 1
+				display: inline-block
+				font-weight: 400
+				transition: background .4s ease, color .4s ease
+				white-space: nowrap
+				cursor: pointer
+				border: 1px solid transparent
 
 
 
@@ -782,6 +815,7 @@
 
 				.slider-arrow
 					margin-left: auto
+					margin-top: auto
 
 			// .slick-list, .slick-slide
 			// 	margin: 0 !important
@@ -799,6 +833,12 @@
 
 			.active 
 				order: 1
+
+	.slider
+		.title
+			a + a
+				margin-top: 15px
+				margin-right: 10px
 
 @media screen and (max-width: 370px)
 
