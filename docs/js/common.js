@@ -20951,6 +20951,11 @@ __webpack_require__(354);
 
 document.addEventListener("DOMContentLoaded", function (e) {
 
+	(0, _jquery2.default)('input[type="file"]').change(function () {
+		var value = (0, _jquery2.default)(this)[0].files[0].name;
+		(0, _jquery2.default)(this).siblings('.forms__input--file-support').val(value);
+	});
+
 	(0, _jquery2.default)("body").click(function (e) {
 		if (!(0, _jquery2.default)(e.target).is((0, _jquery2.default)(".mobile-menu")) && !(0, _jquery2.default)(".mobile-menu").has(e.target).length && (0, _jquery2.default)("body").hasClass("js__menu--open") && !(0, _jquery2.default)(e.target).is((0, _jquery2.default)(".burger")) && !(0, _jquery2.default)(".burger").has(e.target).length) {
 			(0, _jquery2.default)("body").removeClass("js__menu--open");

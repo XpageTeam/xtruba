@@ -36,6 +36,11 @@ require("jquery-ui/themes/base/slider.css");
 
 document.addEventListener("DOMContentLoaded", e => {
 
+	$('input[type="file"]').change(function(){
+		var value = $(this)[0].files[0].name;
+		$(this).siblings('.forms__input--file-support').val(value);
+	});
+
 	$("body").click(function(e){
 		if (!$(e.target).is($(".mobile-menu"))
 			&& !$(".mobile-menu").has(e.target).length

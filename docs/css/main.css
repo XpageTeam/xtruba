@@ -610,6 +610,9 @@ li{
 .popup-form.popup-column-1 .forms__submit-cont{
 			margin-top: 30px
 }
+.multifile-container{
+	order: 1
+}
 .forms-wrap{
 	display: flex;
 	flex-wrap: wrap;
@@ -751,14 +754,16 @@ li{
 		margin-bottom: 10px;
 }
 .forms__label--file{
-			width: 100%
+			display: block;
+			width: 100%;
+			margin-bottom: 10px
 }
 .forms__label--file:before{
 				content: '';
 				position: absolute;
 				pointer-events: all;
 				right: 25px;
-				bottom: 0;
+				top: 34px;
 				cursor: pointer;
 				height: 50px;
 				width: 18.57%;
@@ -794,9 +799,14 @@ li{
 }
 .forms-bot{
 		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin-top: 30px
+		/* justify-content: space-between
+ */
+		align-items: flex-start;
+		margin-top: 30px;
+		flex-direction: column;
+}
+.forms-bot > *:not(:first-child){
+				margin-top: 15px
 }
 .checkbox{
 	position: relative;
@@ -919,6 +929,13 @@ li{
 	}
 }
 @media screen and (max-width: 667px){
+				.forms__input--file-support{
+					width: calc(100% - 40px)
+	}
+				.forms__label--file:before{
+					right: 0;
+					top: 28px
+	}
 
 	.forms{
 		padding: 20px;
@@ -12121,7 +12138,8 @@ button.swiper-pagination-bullet {
 		        transform: translateX(100%);
 		transition: -webkit-transform .3s ease;
 		transition: transform .3s ease;
-		transition: transform .3s ease, -webkit-transform .3s ease
+		transition: transform .3s ease, -webkit-transform .3s ease;
+		display: none
 }
 .cart-cont:hover{
 			-webkit-transform: translateX(0);
