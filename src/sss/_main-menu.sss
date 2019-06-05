@@ -33,6 +33,13 @@
 			> a
 				color: var(--main-color)
 
+		a[href*=".pdf"]
+			background: var(--main-color)
+			border-radius: 30px
+			padding: 10px 23px
+			color: #fff !important
+
+
 
 		&.js__has-menu
 
@@ -107,6 +114,12 @@
 	z-index: 0
 	overflow-y: auto
 	height: 100vh
+
+	.nav__item a[href*=".pdf"]
+		background: #fff
+		border-radius: 0
+		color: #000 !important
+		padding: 15px
 
 	.selectize
 		&-dropdown
@@ -187,8 +200,11 @@
 
 
 
+	.head-select
+		padding: 15px
+		border-bottom: 1px solid var(--border-color)
 
-	.head-address, .head-select
+	.head-address
 		padding: 0
 		background: none !important
 

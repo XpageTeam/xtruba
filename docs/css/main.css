@@ -2130,7 +2130,16 @@ button.swiper-pagination-bullet {
 				font-size: 1.2rem
 	}
 }
+.inner .head-address{
+			background: url('../img/ico-location-color.png') no-repeat left 0 center !important
+}
+.inner .tel-selected a:after{
+			border-right: 1px solid #000;
+			border-bottom: 1px solid #000
+}
 .head-address{
+		display: flex;
+		align-items: center;
 		padding-left: 35px;
 		background: url('../img/ico-location.png') no-repeat left 0 center !important;
 		margin-right: auto
@@ -2473,6 +2482,13 @@ button.swiper-pagination-bullet {
 				color: #5f879f;
 				color: var(--main-color)
 }
+.nav__item a[href*=".pdf"]{
+			background: #5f879f;
+			background: var(--main-color);
+			border-radius: 30px;
+			padding: 10px 23px;
+			color: #fff !important
+}
 .nav__item.js__has-menu > a{
 				position: relative
 }
@@ -2551,6 +2567,12 @@ button.swiper-pagination-bullet {
 	overflow-y: auto;
 	height: 100vh;
 }
+.mobile-menu .nav__item a[href*=".pdf"]{
+		background: #fff;
+		border-radius: 0;
+		color: #000 !important;
+		padding: 15px
+}
 .mobile-menu .selectize-dropdown{
 			width: 100% !important
 }
@@ -2626,16 +2648,21 @@ button.swiper-pagination-bullet {
 				line-height: 1;
 				display: block
 }
-.mobile-menu .head-address, .mobile-menu .head-select{
+.mobile-menu .head-select{
+		padding: 15px;
+		border-bottom: 1px solid #f6f7fa;
+		border-bottom: 1px solid var(--border-color)
+}
+.mobile-menu .head-address{
 		padding: 0;
 		background: none !important;
 }
-.mobile-menu .head-address .head-select__select,.mobile-menu .head-select .head-select__select{
+.mobile-menu .head-address .head-select__select{
 			opacity: 1;
 			border-bottom: 1px solid #f6f7fa;
 			border-bottom: 1px solid var(--border-color)
 }
-.mobile-menu .head-address select,.mobile-menu .head-select select{
+.mobile-menu .head-address select{
 			padding: 15px 40px;
 			color: #000 !important;
 			width: 100%;
