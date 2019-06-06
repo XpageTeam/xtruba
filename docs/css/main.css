@@ -2137,6 +2137,9 @@ button.swiper-pagination-bullet {
 			border-right: 1px solid #000;
 			border-bottom: 1px solid #000
 }
+.head-top{
+		font-size: 1rem
+}
 .head-address{
 		display: flex;
 		align-items: center;
@@ -2196,8 +2199,11 @@ button.swiper-pagination-bullet {
 		border: 1px solid #f6f7fa;
 		border: 1px solid var(--border-color);
 		background: #fff;
-		max-height: 145px;
-		overflow: auto
+		max-height: 145px
+		/* overflow-x: hidden
+ */
+		/* overflow-y: auto
+ */
 }
 .tel-selects::-webkit-scrollbar{
 			width: 8px;
@@ -2216,7 +2222,7 @@ button.swiper-pagination-bullet {
 			position: relative;
 			color: #000;
 			font-size: 13px;
-			background: url('../img/ico-tel-color.png') no-repeat left 30px center !important
+			background: url('../img/ico-tel-color.svg') no-repeat left 30px center !important
 }
 .tel-selects:before{
 			content: '';

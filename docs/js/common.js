@@ -20966,13 +20966,6 @@ document.addEventListener("DOMContentLoaded", function (e) {
 		(0, _jquery2.default)('body').toggleClass('js__menu--open');
 	});
 
-	(0, _jquery2.default)('.fancybox').fancybox({
-		buttons: ['close'],
-		touch: {
-			vertical: false
-		}
-	});
-
 	(0, _jquery2.default)('.nav__list').each(function (i, el) {
 		var $this = (0, _jquery2.default)(el);
 		$this.find('ul').closest('li').addClass('js__has-menu');
@@ -21447,6 +21440,12 @@ document.addEventListener("DOMContentLoaded", function (e) {
 	// 	}
 	// })
 
+	(0, _jquery2.default)('.fancybox').fancybox({
+		buttons: ['close'],
+		touch: {
+			vertical: false
+		}
+	});
 });
 
 /***/ }),

@@ -57,17 +57,6 @@ document.addEventListener("DOMContentLoaded", e => {
 
 
 
-
-
-	$('.fancybox').fancybox({
-		buttons : [
-			'close'
-			],
-		touch: {
-			vertical: false
-		}
-	});
-
 	$('.nav__list').each(function(i,el){
 		var $this = $(el);
 		$this.find('ul').closest('li').addClass('js__has-menu')
@@ -627,6 +616,13 @@ document.addEventListener("DOMContentLoaded", e => {
 		// 	}
 		// })
 
-
+	$('.fancybox').fancybox({
+		buttons : [
+			'close'
+			],
+		touch: {
+			vertical: false
+		}
+	})
 
 });

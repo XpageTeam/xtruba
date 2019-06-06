@@ -10,6 +10,11 @@
 			border-bottom: 1px solid #000
 
 .head
+
+	&-top
+		font-size: rem(16)
+
+
 	
 	&-address
 		display: flex
@@ -76,7 +81,8 @@
 		border: 1px solid var(--border-color)
 		background: #fff
 		max-height: 145px
-		overflow: auto
+		// overflow-x: hidden
+		// overflow-y: auto
 
 		&::-webkit-scrollbar 
 			width: 8px
@@ -93,7 +99,7 @@
 			position: relative
 			color: #000
 			font-size: 13px
-			background: url('../img/ico-tel-color.png') no-repeat left 30px center !important
+			background: url('../img/ico-tel-color.svg') no-repeat left 30px center !important
 
 
 		&:before 
