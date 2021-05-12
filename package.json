@@ -67,6 +67,6 @@
     "jquery-ui": "^1.12.1",
     "slick-carousel": "^1.8.1",
     "snapsvg": "^0.5.1",
-    "swiper": "^4.5.0"
+    "swiper": "^6.5.1"
   }
 }
