@@ -313,6 +313,18 @@ li{
 .standart-slider{
 	position: relative;
 }
+.standart-slider + .standart-page{
+		margin-top: 40px
+}
+.standart-slider__list{
+		max-height: 452px;
+		overflow: hidden
+}
+@media screen and ( max-width: 1200px ){
+	.standart-slider__list{
+			max-height: calc(42vw - 4rem)
+	}
+}
 .standart-slider__arrow{
 		position: absolute;
 		top: 20px;
@@ -439,8 +451,9 @@ li{
 			border: 1px solid var(--border-color)
 }
 .text-page ul, .text-page ol{
-		list-style: none !important;
-		max-width: 720px !important
+		list-style: none !important
+		/* max-width: 720px !important
+ */
 }
 .text-page li{
 		position: relative
@@ -7080,6 +7093,10 @@ button.swiper-pagination-bullet {
 .card-price{
 		font-size: 2.125rem;
 		font-weight: 700;
+		white-space: nowrap;
+}
+.card-price span{
+			font-family: 'Roboto', sans-serif
 }
 .card-price--sale{
 			position: relative;

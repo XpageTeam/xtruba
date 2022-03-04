@@ -164,6 +164,13 @@ li
 
 .standart-slider
 	position: relative
+	+ .standart-page
+		margin-top: 40px
+	&__list
+		max-height: 452px
+		overflow: hidden
+		@media screen and ( max-width: 1200px )
+			max-height: calc(42vw - 4rem)
 
 	&__arrow
 		position: absolute
@@ -294,7 +301,7 @@ li
 
 	ul, ol
 		list-style: none !important
-		max-width: 720px !important
+		// max-width: 720px !important
 
 	li
 		position: relative
