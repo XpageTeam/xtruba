@@ -17,7 +17,7 @@
     "babel-loader": "^7.1.5",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "browser-sync": "^2.24.7",
+    "browser-sync": "^2.27.10",
     "but": "^2.0.1",
     "child_process": "^1.0.2",
     "css-color-converter": "^1.1.0",
